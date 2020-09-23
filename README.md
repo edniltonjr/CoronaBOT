@@ -21,7 +21,7 @@ yarn start # Inicializa o servidor
 
 ## Ferramentas Utilizadas:
 <ul>
-  <li>venom-bot</li>
+  <li>venom-bot by:[joaosouz4](https://github.com/joaosouz4)</li>
   <li>express</li>
   <li>axios</li>
 </ul>
