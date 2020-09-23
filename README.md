@@ -1,8 +1,3 @@
-<h1 align="center">
-    <img alt="NextLevelWeek" title="#NextLevelWeek" src="./img/DevRadar.png" width="200px" />
-</h1>
-
-
 <h1>CoronaBOT</h1>
 <span>
 bot for whatsapp with api covid-19 integration</span>
@@ -12,12 +7,12 @@ bot for whatsapp with api covid-19 integration</span>
 ## Starting the application:
 
 ```
-yarn dev # Inicializa o servidor
+yarn start # Inicializa o servidor
 ```
 
 </br>
 
-<h6>Mobile Frontend </h6>
+<h6>Demos</h6>
 <p align="center">
 <img src="/img/print.jpeg" alt="Print" width="200px"/>
 <img src="/img/print2.jpeg" alt="Print 2" width="200px"/>
@@ -41,4 +36,4 @@ yarn dev # Inicializa o servidor
 > Caso tenha alguma dúvida confira este [guia de como contribuir no GitHub](https://github.com/firstcontributions/first-contributions)
 
 
-Ednilton Junior 👋🏽 [Entre em contato!](https://www.linkedin.com/in/tony-silva/)
+Ednilton Junior 👋🏽 [Entre em contato!](https://www.linkedin.com/in/ednilton-junior-414b93138/)
