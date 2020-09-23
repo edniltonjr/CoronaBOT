@@ -1,8 +1,12 @@
+
 {
   "name": "coronabot",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "axios": "^0.20.0",
     "express": "^4.17.1",
