@@ -1,8 +1,3 @@
-import { http } from './http'
-import  venomService from './services/venom';
+import { init } from './start';
 
-http.get('/start', async () => {
-  await venomService()
-
-  return console.log('Mensagens Enviadas para Lista de Números')
-})
+init()
