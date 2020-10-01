@@ -1,5 +1,6 @@
 import * as venom from 'venom-bot';
 import start from './sendMessage';
+import fs from 'fs';
 
 const venomStartClient = () => venom
 .create(
@@ -16,7 +17,7 @@ const venomStartClient = () => venom
     response.data = new Buffer.from(matches[2], 'base64');
 
     const imageBuffer = response;
-    require('fs').writeFile(
+    fs.writeFile(
       'qr.png',
       imageBuffer['data'],
       'binary',
@@ -31,6 +32,7 @@ const venomStartClient = () => venom
   { logQR: false }
 )
 .then((client) => {
+  console.log(client)
   start(client);
 })
 
