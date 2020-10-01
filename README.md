@@ -2,15 +2,24 @@
 <span>
 bot for whatsapp with api covid-19 integration</span>
 
-## Starting the application:
+## Inicializando o aplicativo:
 
-```
-yarn build # gerar o build da aplicação
-```
+Execute `yarn install` para instalar as dependências
 
-```
-yarn start # Inicializa o servidor
-```
+- Production mode
+
+  ```
+  yarn build # gerar o build da aplicação
+  ```
+
+  ```
+  yarn start # Inicializa o servidor
+  ```
+
+- Developer Mode
+  `yarn dev`
+
+Em sequida poderá acessar `http://http://localhost:5000/qrcode/qr.png` para escanear o QRCode.
 
 </br>
 
