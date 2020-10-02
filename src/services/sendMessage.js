@@ -1,10 +1,12 @@
-import { pickState } from '../env/message';
+import { pickState } from "../env/message";
+import path from "path";
+import axios from "axios";
 
 const start = (client) => {
   const numbers = [
     {
       nome: "Junior",
-      number: "5588082860@c.us",
+      number: "558399523548@c.us",
     },
   ];
 
@@ -19,7 +21,12 @@ const start = (client) => {
       });
 
     client
-      .sendImage(resp.number, "img/covid.jpg", "image-name", "COVID 19")
+      .sendImage(
+        resp.number,
+        path.resolve(__dirname, "..", "..", ".github", "img", "covid.jpg"),
+        "image-name",
+        "COVID 19"
+      )
       .then((result) => {
         console.log("ResultIMAGE: ", result); //return object success
       })
@@ -30,7 +37,7 @@ const start = (client) => {
 
   client.onMessage((message) => {
     const sigla = message.body;
-    if (message.body === `${sigla}`) {
+    if (message.body === `${sigla}` && sigla.length === 2) {
       axios
         .get(
           `https://covid19-brazil-api.now.sh/api/report/v1/brazil/uf/${sigla}`
@@ -40,10 +47,11 @@ const start = (client) => {
             message.from,
             resp.data.state === undefined
               ? "*Estado/Sigla não encontrado*"
-              : `😷 *Status de Casos de COVID - ${resp.data.uf}* 
-                    *Estado*: ${resp.data.state}
-                 🤧 *Total de Casos*: ${resp.data.cases} 
-                 ✚ *Mortes*: ${resp.data.deaths}`
+              : `
+😷 *Status de Casos de COVID - ${resp.data.uf}* 
+*Estado*: ${resp.data.state}
+🤧 *Total de Casos*: ${resp.data.cases} 
+✚ *Mortes*: ${resp.data.deaths}`
           );
         });
     }

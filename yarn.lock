@@ -4089,10 +4089,10 @@ vary@~1.1.2:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
 
-venom-bot@^2.0.1:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/venom-bot/-/venom-bot-2.0.4.tgz#482be4bbe618575faa70f45cdb12116bec1a548a"
-  integrity sha512-14ykW+Yv6umG9DRKSd1tpU02+4EkIxI3tj8UJOXZsy/M+hQUJVdmgo+LbMl1gLVmRyC9TgrJGcWfF33eKfb/qg==
+venom-bot@2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/venom-bot/-/venom-bot-2.0.5.tgz#c88addf9081c73bbfd7b33b3883c253a3ea670a1"
+  integrity sha512-TWApV4Hgg+W5sQCLuUs/DUR7cJjTmAbgGzIY2oGHFscextE9k8lL1YD0ucWTNxFYeVXl3IzqN99Sol3c3gTmWQ==
   dependencies:
     atob "^2.1.2"
     axios "^0.19.2"
